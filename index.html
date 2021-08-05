@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- main container -->
+    <div class="main__container">
+        <!-- header -->
+        <header>
+            <div class="title">WordBeater</div>
+        </header>
+
+        <!-- typing container -->
+        <div class="typing__container">
+            <div class="info">Type The Given Word Within <span class="seconds">5</span> Seconds:</div>
+            <!-- current word -->
+            <div class="current_word">hello</div>
+            <!-- input box -->
+            <input type="text" class="word_input" placeholder="Start typing...." autofocus>
+            <!-- message -->
+            <div class="message"></div>
+
+            <!-- timer and score -->
+            <div class="container">
+                <div class="time">
+                    Time Left: <span id="time">0</span>
+                </div>
+                <div class="score">
+                    Score: <span id="score">0</span>
+                </div>
+            </div>
+
+            <!-- Instruction -->
+            <div class="instruction">
+                <div class="box">
+                    <h5>Instruction</h5>
+                    <p>Type each word in the given amount of seconds to score. To play again, just type the current will reset.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
