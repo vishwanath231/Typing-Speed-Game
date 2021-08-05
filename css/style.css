@@ -93,5 +93,7 @@ input{
 @media(max-width:500px){
     input{
         width: 100%;
+        text-transform: lowercase;
+
     }
 }
