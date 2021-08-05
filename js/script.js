@@ -1,4 +1,13 @@
+const start = document.querySelector('.start');
+const startBtn = document.querySelector('.start Button');
+const typingContainer = document.querySelector(".typing__container");
+
+startBtn.addEventListener("click", () => {
+    start.classList.add('active');
+    typingContainer.classList.add('active')
+})
 window.addEventListener('load', init);
+
 
 // Availabel Levels 
 const levels = {
@@ -8,7 +17,7 @@ const levels = {
 }
 
 // To change level
-const currentLevel = levels.medium;
+const currentLevel = levels.easy;
 
 
 // Global
@@ -94,7 +103,7 @@ function startMatch() {
 function matchWord() {
 
     if (wordInput.value === currentWord.innerHTML) {
-        message.innerHTML = `<span style='color:green;'>Correct</span>`;
+        message.innerHTML = `<span style='color:green;'>Correct!!!</span>`;
         return true;
     }else{
         message.innerHTML = '';
