@@ -39,7 +39,6 @@ header{
     font-size: 40px;
     font-weight: 400;
     margin: 2rem 0;
-    text-transform: capitalize;
 }
 
 input{
@@ -53,7 +52,6 @@ input{
     font-weight: 400;
     padding: 8px 10px;
     color: #000;
-    text-transform: capitalize;
 }
 
 .message{
@@ -93,7 +91,6 @@ input{
 @media(max-width:500px){
     input{
         width: 100%;
-        text-transform: lowercase;
 
     }
 }
